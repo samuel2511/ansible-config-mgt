@@ -1,4 +1,8 @@
 ---
+# Nginx role default variables
+enable_nginx_lb: false
+load_balancer_is_required: false
+
 # Set this to the user ansible is logging in as - should have root
 # or sudo access
 mysql_user_home: /root
