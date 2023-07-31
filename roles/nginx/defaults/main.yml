@@ -1,0 +1,6 @@
+---
+# Apache role default variables
+enable_nginx_lb: true
+load_balancer_is_required: true
+
+# defaults file for webserver
