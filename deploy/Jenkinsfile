@@ -19,3 +19,33 @@ pipeline {
     }
   }
 }
+
+       stage('package') {
+      steps {
+        script {
+          sh 'echo "packaging"'
+        }
+      }
+    }
+  }
+}
+
+stage('deploy') {
+      steps {
+        script {
+          sh 'echo "deploying"'
+        }
+      }
+    }
+  }
+}
+
+stage('clean up') {
+      steps {
+        script {
+          sh 'echo "cleaning up"'
+        }
+      }
+    }
+  }
+}
