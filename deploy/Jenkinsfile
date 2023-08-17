@@ -17,18 +17,14 @@ pipeline {
         }
       }
     }
-  }
-}
 
-     stage('package') {
+    stage('package') {
       steps {
         script {
           sh 'echo "packaging"'
         }
       }
     }
-  }
-}
    
 
     stage('deploy') {
@@ -38,8 +34,6 @@ pipeline {
         }
       }
     }
-  }
-}
 
     stage('clean up') {
       steps {
@@ -50,3 +44,5 @@ pipeline {
     }
   }
 }
+
+
