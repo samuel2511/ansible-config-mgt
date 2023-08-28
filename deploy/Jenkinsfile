@@ -1,12 +1,11 @@
 pipeline {
     agent any
 
-<<<<<<< HEAD
     stages {
         stage('Build') {
             steps {
                 script {
-                    sh 'echo "Building Stage"'
+                    sh 'echo "Building"'
                 }
             }
         }
@@ -14,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh 'echo "Testing Stage"'
+                    sh 'echo "Testing"'
                 }
             }
         }
@@ -22,7 +21,7 @@ pipeline {
         stage('Package') {
             steps {
                 script {
-                    sh 'echo "Packaging Stage"'
+                    sh 'echo "Packaging"'
                 }
             }
         }
@@ -30,7 +29,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh 'echo "Deploying Stage"'
+                    sh 'echo "Deploying"'
                 }
             }
         }
@@ -38,7 +37,7 @@ pipeline {
         stage('Clean Up') {
             steps {
                 script {
-                    sh 'echo "Cleaning Up Stage"'
+                    sh 'echo "Cleaning Up"'
                 }
             }
         }
